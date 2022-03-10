@@ -3,7 +3,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
 ### openssl ###
-./cert/
+.crt
+.csr
+.key
 
 ### Node ###
 # Logs
