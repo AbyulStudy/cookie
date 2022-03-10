@@ -10,6 +10,11 @@ const options = {
   passphrase: 'test',
 };
 
+app.get('/', (req, res) => {
+  res.cookie('name', 'devbyul');
+  res.send('cookie');
+});
+
 const PORT = 3000;
 spdy.createServer(options, app).listen(PORT, () => {
   console.log('start!');
