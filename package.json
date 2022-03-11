@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AbyulStudy/cookie#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.17.3",
     "spdy": "^4.0.2"
   }
