@@ -12,13 +12,7 @@ const cookieParser = require('cookie-parser');
 // };
 
 app.use(cookieParser());
-// const cookieOption = {
-// secure: true,
-// httpOnly: true,
-// domain: '127.0.0.1',
-// path: 'foo/bar',
-// expires: expiryDate
-// };
+
 app.get('/', (req, res) => {
   const expiryDate = new Date(Date.now() + 60 * 60 * 1000); // 1 hour
   res.cookie('default', 'cookie');
